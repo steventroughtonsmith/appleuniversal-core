@@ -12,7 +12,7 @@ import UIKit
 @available(iOS 13.0, *)
 extension UIFont {
 	
-	func rounded() -> UIFont {
+	public func rounded() -> UIFont {
 		
 		if let descriptor = self.fontDescriptor.withDesign(.rounded) {
 			return UIFont(descriptor: descriptor, size: self.pointSize)
@@ -22,7 +22,7 @@ extension UIFont {
 		}
 	}
 	
-	func bold() -> UIFont {
+	public func bold() -> UIFont {
 		
 		if let descriptor = self.fontDescriptor.withSymbolicTraits(.traitBold) {
 			return UIFont(descriptor: descriptor, size: self.pointSize)
